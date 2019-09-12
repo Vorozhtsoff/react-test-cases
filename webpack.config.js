@@ -26,10 +26,13 @@ module.exports = {
     filename: 'app.[hash].js'
   },
   devtool: 'eval',
+  resolve: {
+    extensions: ['*', '.js', '.jsx']
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {

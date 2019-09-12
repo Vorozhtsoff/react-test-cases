@@ -32,7 +32,10 @@ export default class App extends Component {
 
 		return (
 			<div className='wrapper'>
-				<Header location={this.props.routing.location} />
+                <Header
+                    buttons={[1,2,3,4,5,10]}
+                    location={this.props.routing.location}
+                />
 
 				<Route
 					exact

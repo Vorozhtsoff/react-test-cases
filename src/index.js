@@ -15,6 +15,9 @@ import createBrowserHistory from 'history/createBrowserHistory';
 
 const store = rehydrate();
 
+
+
+
 const renderApp = Component => {
   const browserHistory = createBrowserHistory();
   const routeStore = new RouterStore();
